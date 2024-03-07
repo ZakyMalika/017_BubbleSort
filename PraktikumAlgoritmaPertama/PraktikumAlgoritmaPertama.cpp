@@ -42,7 +42,7 @@ void BubbleshortArray() { //Prosedur untuk mengurutkan array dengan metode Bubbl
 
 		cout << "\nPass" << pass - 1 << ": ";	//output ke layar
 		for (int k = 0; k < n; k++) {			//looping nilai k dimulai dari 0 hingga n-01
-			cout << a[k] << " ";				//output ke layar
+			cout << a[k] << " ";				//output ke layaR
 		}
 		cout << endl;
 	} while (pass < n - 1);
