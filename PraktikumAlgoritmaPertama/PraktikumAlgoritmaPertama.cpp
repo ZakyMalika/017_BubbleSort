@@ -47,3 +47,18 @@ void BubbleshortArray() { //Prosedur untuk mengurutkan array dengan metode Bubbl
 		cout << endl;
 	} while (pass < n - 1);						//step 5
 }
+
+void display() {
+	cout << endl;											//Menambahkan Baris Kosong 
+	cout << "===================" << endl;					//Output ke layar
+	cout << "Element Array yang telah tersusun" << endl;	//Output ke layar
+	cout << "===================" << endl;					//Output ke layar
+	cout << endl;
+	for (int j = 0; j < n; j++) {
+		cout << a[j];
+		if (j < n - 1) {
+			cout << "-->";
+		}
+	}
+	cout << endl
+}
