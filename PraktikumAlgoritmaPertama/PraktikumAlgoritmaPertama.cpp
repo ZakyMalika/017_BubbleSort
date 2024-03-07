@@ -45,5 +45,5 @@ void BubbleshortArray() { //Prosedur untuk mengurutkan array dengan metode Bubbl
 			cout << a[k] << " ";				//output ke layaR
 		}
 		cout << endl;
-	} while (pass < n - 1);
+	} while (pass < n - 1);						//step 5
 }
