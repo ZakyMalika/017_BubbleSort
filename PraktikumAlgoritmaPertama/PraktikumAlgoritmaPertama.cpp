@@ -31,18 +31,18 @@ void BubbleshortArray() { //Prosedur untuk mengurutkan array dengan metode Bubbl
 	int pass = 1;		//step 1
 
 	do {
-		for (int j = 0; j <= n - 1 - pass; j++) {
-			if (a[j] > a[j + 1]) {
+		for (int j = 0; j <= n - 1 - pass; j++) {	//step 2
+			if (a[j] > a[j + 1]) {					//step 3
 				int temp = a[j];
 				a[j] = a[j + 1];
 				a[j + 1] = temp;
 			}
 		}
-		pass = pass + 1;
+		pass = pass + 1;		//step 4
 
-		cout << "\nPass" << pass - 1 << ": ";
-		for (int k = 0; k < n; k++) {
-			cout << a[k] << " ";
+		cout << "\nPass" << pass - 1 << ": ";	//output ke layar
+		for (int k = 0; k < n; k++) {			//looping nilai k dimulai dari 0 hingga n-01
+			cout << a[k] << " ";				//output ke layar
 		}
 		cout << endl;
 	} while (pass < n - 1);
