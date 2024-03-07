@@ -27,8 +27,8 @@ void input() {	//prosedur untuk input
 
 }
 
-void BubbleshortArray() {
-	int pass = 1;
+void BubbleshortArray() { //Prosedur untuk mengurutkan array dengan metode Bubble Sort
+	int pass = 1;		//step 1
 
 	do {
 		for (int j = 0; j <= n - 1 - pass; j++) {
@@ -44,6 +44,6 @@ void BubbleshortArray() {
 		for (int k = 0; k < n; k++) {
 			cout << a[k] << " ";
 		}
-
-	}
+		cout << endl;
+	} while (pass < n - 1);
 }
