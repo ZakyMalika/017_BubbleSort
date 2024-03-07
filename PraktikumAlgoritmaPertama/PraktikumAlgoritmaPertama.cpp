@@ -17,5 +17,6 @@ void input() {	//prosedur untuk input
 	}
 	cout << endl;
 	cout << "=========================" << endl;
-	cout << "Maukan Elelemnt Array"
+	cout << "Masukan Elemen Array" << endl;
+	cout << "=========================" << endl;
 }
