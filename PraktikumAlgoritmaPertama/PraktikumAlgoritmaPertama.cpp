@@ -15,14 +15,35 @@ void input() {	//prosedur untuk input
 		}
 
 	}
-	cout << endl;
-	cout << "=========================" << endl;
-	cout << "Masukan Elemen Array" << endl;
-	cout << "=========================" << endl;
+	cout << endl;									//Output Baris Kosong
+	cout << "=========================" << endl;	//Output ke layar
+	cout << "Masukan Elemen Array" << endl;			//Output ke layar
+	cout << "=========================" << endl;	//Output ke layar
 
 	for (int i = 0; i < n; i++) {
-		cout << "Data ke-" << (i + 1) << ":";
+		cout << "Data ke-" << (i + 1) << ": ";
 		cin >> a[i];
 	}
 
+}
+
+void BubbleshortArray() {
+	int pass = 1;
+
+	do {
+		for (int j = 0; j <= n - 1 - pass; j++) {
+			if (a[j] > a[j + 1]) {
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+		pass = pass + 1;
+
+		cout << "\nPass" << pass - 1 << ": ";
+		for (int k = 0; k < n; k++) {
+			cout << a[k] << " ";
+		}
+
+	}
 }
